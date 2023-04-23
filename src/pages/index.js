@@ -32,7 +32,7 @@ export default function Home() {
         {/* Hero & Nav Section */}
         <section className=" min-h-screen mb-2">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons">CultureX</h1>
+            <h1 className="text-xl font-burtons cursor-pointer">CultureX</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -42,8 +42,8 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="#"
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 cursor-pointer"
+                  href="https://shorturl.at/gnI37"
                   target="_blank"
                 >
                   Resume
@@ -63,9 +63,18 @@ export default function Home() {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-            <AiFillTwitterCircle />
-            <AiFillLinkedin />
-            <AiFillGithub />
+            <a href="https://twitter.com/Andreyhuey" target="_blank">
+              <AiFillTwitterCircle />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/oluwadara-ola-obaado-64b5511b4/"
+              target="_blank"
+            >
+              <AiFillLinkedin />
+            </a>
+            <a href="https://github.com/Andreyhuey" target="_blank">
+              <AiFillGithub />
+            </a>
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image src={deved} style={{ objectFit: "cover" }} fill />
@@ -101,9 +110,11 @@ export default function Home() {
               </h3>
               <p> Creating elegant desgins suited for your need ...</p>
               <h4 className="py-4 text-teal-600">Design tools i use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Ilustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">Photoshop</p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">
+                Ilustrator
+              </p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">Figma</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-800">
               <Image
@@ -161,6 +172,24 @@ export default function Home() {
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/4 flex-1">
               <Image
+                src={web3}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                style={{ layout: "responsive" }}
+              />
+            </div>
+            <div className="basis-1/4 flex-1">
+              <Image
+                src={web5}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                style={{ layout: "responsive" }}
+              />
+            </div>
+            <div className="basis-1/4 flex-1">
+              <Image
                 src={web1}
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -180,24 +209,6 @@ export default function Home() {
             <div className="basis-1/4 flex-1">
               <Image
                 src={web4}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                style={{ layout: "responsive" }}
-              />
-            </div>
-            <div className="basis-1/4 flex-1">
-              <Image
-                src={web3}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                style={{ layout: "responsive" }}
-              />
-            </div>
-            <div className="basis-1/4 flex-1">
-              <Image
-                src={web5}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
