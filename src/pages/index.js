@@ -1,5 +1,15 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import {
+  AiFillTwitterCircle,
+  AiFillGithub,
+  AiFillLinkedin,
+} from "react-icons/ai";
+import Image from "next/image";
+import deved from "../../public/dev-ed-wave.png";
+import design from "../../public/design.png";
+import code from "../../public/code.png";
+import consulting from "../../public/consulting.png";
 
 export default function Home() {
   return (
@@ -10,9 +20,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-white px-10 ">
-        <section className=" min-h-screen">
+        <section className=" min-h-screen mb-2">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl">developedbyAndreyhuey</h1>
+            <h1 className="text-xl font-burtons">CultureX</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
@@ -28,6 +38,88 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+          <div className="text-center p-10">
+            <h2 className="text-5xl py-2 text-teal-600 font-medium">
+              Andreyhuey
+            </h2>
+            <h3 className="text-2xl py-2">Front-End Developer</h3>
+            <p className="text-md py-5 leading-8 text-grey-800">
+              Freelancer providing services for web development i.e web app
+              designing, API development and BaaS i.e backend as a Service e.g
+              Firebase.
+            </p>
+          </div>
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
+            <AiFillTwitterCircle />
+            <AiFillLinkedin />
+            <AiFillGithub />
+          </div>
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 ">
+            <Image src={deved} style={{ objectFit: "cover" }} />
+          </div>
+        </section>
+        {/*  */}
+        <section>
+          <div>
+            <h3 className="text-3xl py-1">Services I offer </h3>
+            <p className="text-md py-2 leading-8 text-gray-800">
+              Since my journey as a developer i have lorem ipsum lorem ipsum
+              lorem ipsum, i have freelanced various websites and have managed
+              various facilities
+              <span className="text-teal-500">agencies</span>
+              consulted for <span className="text-teal-500">startups</span> and
+              collaborated with talanted people to
+            </p>
+            <p className="text-md py-2 leading-8 text-gray-800 ">
+              I offer from a wide range of services, including brainstorming and
+              programming, teaching and so on
+            </p>
+          </div>
+          <div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image
+                src={design}
+                width={100}
+                height={100}
+                className="mx-auto"
+              />
+              <h3 className="text-lg font-meduim pt-8 pb-2">
+                Beautiful Designs
+              </h3>
+              <p> Creating elegant desgins suited for your need ...</p>
+              <h4 className="py-4 text-teal-600">Design tools i use</h4>
+              <p className="text-gray-800 py-1">Photoshop</p>
+              <p className="text-gray-800 py-1">Ilustrator</p>
+              <p className="text-gray-800 py-1">Figma</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image
+                src={consulting}
+                width={100}
+                height={100}
+                className="mx-auto"
+              />
+              <h3 className="text-lg font-meduim pt-8 pb-2">
+                Beautiful Designs
+              </h3>
+              <p> Creating elegant desgins suited for your need ...</p>
+              <h4 className="py-4 text-teal-600">Design tools i use</h4>
+              <p className="text-gray-800 py-1">Photoshop</p>
+              <p className="text-gray-800 py-1">Ilustrator</p>
+              <p className="text-gray-800 py-1">Figma</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={code} width={100} height={100} className="mx-auto" />
+              <h3 className="text-lg font-meduim pt-8 pb-2">
+                Beautiful Designs
+              </h3>
+              <p> Creating elegant desgins suited for your need ...</p>
+              <h4 className="py-4 text-teal-600">Design tools i use</h4>
+              <p className="text-gray-800 py-1">Photoshop</p>
+              <p className="text-gray-800 py-1">Ilustrator</p>
+              <p className="text-gray-800 py-1">Figma</p>
+            </div>
+          </div>
         </section>
       </main>
     </>
